@@ -5,9 +5,6 @@ ones_letters = {0:'', 1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:
 
 try:
     number = int(input("Enter a number from 1 to 3999: "))
-except: 
-    print("ERROR: entered a number 4000 or above")
-else:
     thousands_digit = number // 1000
     thousands_rem = number % 1000
     hundreds_digit = thousands_rem // 100
@@ -17,3 +14,5 @@ else:
     ones_digit = tens_rem
     print("Here is the number in Roman Numerals:", end=" ")
     print(thousands_letters[thousands_digit] + hundreds_letters[hundreds_digit] + tens_letters[tens_digit] + ones_letters[ones_digit])
+except: 
+    print("ERROR: entered a number 4000 or above")
