@@ -15,4 +15,4 @@ try:
     print("Here is the number in Roman Numerals:", end=" ")
     print(thousands_letters[thousands_digit] + hundreds_letters[hundreds_digit] + tens_letters[tens_digit] + ones_letters[ones_digit])
 except: 
-    print("ERROR: entered a number 4000 or above")
+    print("<ERROR: entered a number 4000 or above, or entered a negative number>")
